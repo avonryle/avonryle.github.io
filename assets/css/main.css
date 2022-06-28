@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Quicksand&family=Raleway:wght@300&display=swap');
+
+:root {
+    /* colors */
+    --onyx-black: rgb(15,15,15);
+    --cardinal-red: rgb(196, 30, 58);
+    --davys-grey: rgb(85, 85, 85);
+    --english-vermillion: rgb(206, 73, 75)
+}
+
+html, body {
+    background-color: var(--onyx-black) !important;   
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+    height: 70px
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--cardinal-red);
+    border-radius: 5px;
+}
+
+.main-content-children {
+    font-family: 'QuickSand', sans-serif;
+    padding: 1rem;
+    text-align: center;
+}
+
+.main-content-children h1 {
+  font-size: 60px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-content-children p.intro {
+  color: var(--davys-grey);
+  font-size: 16px;
+  margin: 0;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, 10%);
+}
+
+.main-content-children p.desc {
+  color: var(--davys-grey);
+  font-size: 16px;
+  font-family: 'QuickSand', sans-serif;
+  margin: 0;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, 15%);
+}
+
+h1 {
+    size: 32px;
+}
+
+h3 {
+  size: 16px
+}
+span {
+  color: var(--cardinal-red)
+}
+
+.loader-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.loader-wrapper .loader {
+  height: 80px;
+  width: 80px;
+}
+
+.loader-wrapper.is-active {
+  opacity: 1;
+  z-index: 1;
+  color: var(--onyx-black)
+}
+
+.is-loading {
+  position: relative;
+}
+
+p.loading-text {
+  font-family: 'QuickSand', sans-serif;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  text-align: center;
+  color: var(--davys-grey);
+}
+
+.menu-list {
+  font-family: 'QuickSand', sans-serif;
+}
+
+a.rl {
+  color: var(--cardinal-red)
+}
+
+.is-at-end {
+  width: 100%;
+  height: 50px;
+}
