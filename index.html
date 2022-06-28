@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>avonryle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/assets/css/main.css" type="text/css">
+  <link rel="stylesheet" href="/assets/css/styles.css" type="text/css">
+  <link rel="stylesheet" href="/builders/css/bulma.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="./builders/javascript/typed.js"></script>
+  <script src="./builders/javascript/jquery.js"></script>
+</head>
+
+<body>
+  <div class="loader-wrapper is-active">
+    <p class="loading-text">Loading assets and builders...<br> This may take a few seconds.</p>
+    <div class="tiles">
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+    </div>
+  </div>
+  <div class="main-content-children is-textselection-disabled">
+    <img class="avatar" src="./assets/images/avonryle.jpg" alt="" />
+
+    <p class="intro">Hello there! i'm avonryle.</p>
+    <h1>I am a <span id="typed"></span></h1>
+    <p class="desc relative">I am an experienced JavaScript/TypeScript Developer and a Junior Full Stack Web Developer.
+      <br>
+      I am currently a backend developer for an organisation named CloudTeam so go check it out <a class="rl"
+        href="https://cloudteam.me">here</a>
+    </p>
+  </div>
+  <section class="main-content columns is-fullheight is-textselection-disabled">
+
+    <aside class="column is-2 is-narrow-mobile is-fullheight section is-hidden-mobile fixed">
+      <ul class="menu-list">
+        <p class="menu-label is-hidden-touch"><span class="icon"><i
+              class="fa-solid fa-folder-tree"></i></span>Navigation</p>
+        <ul>
+          <li>
+            <a class="is-danger" onclick="loadHome()">
+              <span class="icon"><i class="fa fa-info"></i></span>&nbsp;About
+            </a>
+          </li>
+          <li>
+        </ul>
+        <ul>
+          <a class="is-danger" onclick="loadProjects()">
+            <span class="icon"><i class="fa fa-diagram-project"></i></span>&nbsp;Projects
+          </a>
+          </li>
+          <li>
+        </ul>
+        <p class="menu-label is-hidden-touch"><span class="icon"><i class="fa fa-table"></i></span>Link(s)</p>
+        <ul class="menu-list">
+          <ul>
+            <li>
+              <a class="is-danger" href="https://cloudteam.me"">
+              <span class=" icon is-small"><i class="fa-brands fa-discord"></i></span>&nbsp; CloudTeam
+              </a>
+            </li>
+            <li>
+              <a class="is-danger" href="https://github.com/avonryle">
+                <span class="icon is-small"><i class="fa-brands fa-github"></i></span>&nbsp; Github
+              </a>
+            </li>
+          </ul>
+        </ul>
+    </aside>
+  </section>
+  <footer class="footer is-at-end">
+    <div class="content has-text-centered">
+      <p>Copyright © <a class="rl" href="#">avonryle#3155</a>.</p>
+      <p>Source code for the portfolio is licensed under <a class="rl"
+          href="http://opensource.org/licenses/mit-license.php">MIT</a> at <a class="rl"
+          href="https://github.com/avonryle/avonryle.github.io">Github</a>.</p>
+      </li>
+    </div>
+  </footer>
+</body>
+
+</html>
+<script>
+  $("document").ready(function () {
+    const typed = new Typed("#typed", {
+      strings: [
+        "Web Developer.",
+        "Student.",
+        "Gamer."
+      ],
+      typeSpeed: 100,
+      backSpeed: 80,
+      loop: true
+    })
+  })
+</script>
+<script src="./assets/javascript/script.js"></script>
+</body>
+
+</html>
